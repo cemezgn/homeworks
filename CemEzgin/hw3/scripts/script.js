@@ -15,7 +15,6 @@ var Result = function(answer) {
 Result.prototype.finalResult = function() {
 	document.getElementById('display').innerHTML += this.answer;
 }
-//For taking the numbers and operations from keyboard.
 function keyListen(event) {
 	if(event.which == 48 || event.which == 96) {
 		document.getElementById('display').innerHTML += 0;
@@ -49,7 +48,6 @@ function keyListen(event) {
 		document.getElementById('display').innerHTML += '.';
 	}
 }
-//for taking operations and sending to operations clases from display when click equal button.
 function takeToArray() {
 	var char = document.getElementById('display').innerHTML;
 	for (var i = 0; i < char.length; i++) {
